@@ -75,6 +75,16 @@
     <string name="device_begonia">Redmi Note 8 Pro</string>
     <string name="device_begonia_description">begonia | Ayush Singh</string>
 
+    <!-- Github Info -->
+    <string name="dev_1_git" translatable="false">Darkstar085</string>
+    <string name="dev_2_git" translatable="false">Jayant-Deshmukh</string>
+    <string name="dev_3_git" translatable="false">NipinNA</string>
+    <string name="dev_4_git" translatable="false">AdnanFaysal</string>
+    <string name="dev_5_git" translatable="false">Darkstar085</string>
+    <string name="mentions_pavan_git" translatable="false">Advertpavan</string>
+    <string name="mentions_sam_git" translatable="false">SamGrande101</string>
+    <string name="mentions_iacob_git" translatable="false">IacobIonut01</string>
+
     <!-- Categories -->
     <string name="team_title">About Team</string>
     <string name="button_title">Buttons</string>
