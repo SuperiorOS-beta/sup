@@ -260,13 +260,13 @@
     <string name="ambient_notification_light_color_automatic_title">Notification color</string>
     <string name="pulse_ambient_light_color">When pulsing, use</string>
 
+    <!-- VoLTE icon -->
+    <string name="volte_icon_title">VoLTE icon</string>
+    <string name="volte_icon_summary">Display VoLTE icon when available</string>
+
     <!-- VoWiFi icon -->
     <string name="vowifi_icon_title">VoWiFi icon</string>
-    <string name="vowifi_icon_hide">Hide VoWiFi icon</string>
-    <string name="vowifi_icon_show">Display VoWiFi icon</string>
-    <string name="vowifi_icon_over_volte">Display VoWiFi and hide VoLTE</string>
-
-    <!-- Show VoLTE switch -->
-    <string name="show_volte_title">VoLTE icon</string>
-    <string name="show_volte_summary">Display VoLTE icon</string>
+    <string name="vowifi_icon_summary">Display VoWiFi icon when available</string>
+    <string name="volte_vowifi_override_title">VoWiFi override</string>
+    <string name="volte_vowifi_override_summary">Hide VoLTE when VoWiFi is available</string>
 </resources>
