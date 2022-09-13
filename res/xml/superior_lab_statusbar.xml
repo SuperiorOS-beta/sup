@@ -32,6 +32,12 @@
         android:key="icons_category"
         android:title="@string/statusbar_icons">
 
+        <Preference
+            android:key="battery_styles_category"
+            android:fragment="com.superior.lab.fragments.BatterySettings"
+            android:title="@string/battery_settings_title"
+            android:summary="@string/battery_style_category_summary" />
+
 	<Preference
             android:key="systemui_tuner_statusbar"
             android:title="@string/statusbar_items_title"
