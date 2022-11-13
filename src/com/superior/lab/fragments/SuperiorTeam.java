@@ -38,6 +38,7 @@ import com.android.settings.R;
 
 import com.android.internal.logging.nano.MetricsProto.MetricsEvent;
 import com.superior.settings.utils.HttpHandler;
+import com.android.internal.util.superior.SuperiorUtils;
 
 import org.json.JSONException;
 import org.json.JSONObject;
@@ -53,8 +54,10 @@ public class SuperiorTeam extends SettingsPreferenceFragment {
        super.onCreate(savedInstanceState);
 
         addPreferencesFromResource(R.xml.superior_lab_team);
-                if (isOnline()) {
+        if (!SuperiorUtils.isConnected()) {
             showGitProfileIcons();
+        } else {
+            break;
         }
     }
 
@@ -69,7 +72,7 @@ public class SuperiorTeam extends SettingsPreferenceFragment {
 		getGithubIcon(R.string.dev_3_git, findPreference("dev3"));
 		getGithubIcon(R.string.dev_4_git, findPreference("dev4"));
 		getGithubIcon(R.string.dev_5_git, findPreference("dev5"));
-        getGithubIcon(R.string.mention_pavan_git, findPreference("mentions_pavan"));
+		getGithubIcon(R.string.mention_pavan_git, findPreference("mentions_pavan"));
 		getGithubIcon(R.string.mentions_sam_git, findPreference("mentions_sam"));
 		getGithubIcon(R.string.mentions_iacob_git, findPreference("mentions_iacob"));
     }
@@ -151,12 +154,6 @@ public class SuperiorTeam extends SettingsPreferenceFragment {
         canvas.drawBitmap(srcBitmap, left, top, paint);
         srcBitmap.recycle();
         return dstBitmap;
-    }
-
-    private boolean isOnline() {
-        ConnectivityManager cm = (ConnectivityManager) getSystemService(Context.CONNECTIVITY_SERVICE);
-        NetworkInfo netInfo = cm.getActiveNetworkInfo();
-        return netInfo != null && netInfo.isConnectedOrConnecting();
     }
 
 }
